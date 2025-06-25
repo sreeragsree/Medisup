@@ -1,0 +1,306 @@
+/* Register.css */
+
+.register-container {
+  min-height: 100vh;
+   background: linear-gradient(135deg, #051c47 0%, #3d74c7 50%, #082253 100%);
+  /* background: linear-gradient(135deg, #053247 0%, #3dabc7 50%, #083b53 100%); */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.bg-shape {
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+.shape-1 {
+  width: 300px;
+  height: 300px;
+  top: -100px;
+  right: -100px;
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.shape-2 {
+  width: 200px;
+  height: 200px;
+  bottom: 20%;
+  left: -50px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.shape-3 {
+  width: 150px;
+  height: 150px;
+  top: 30%;
+  left: 10%;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.shape-4 {
+  width: 100px;
+  height: 100px;
+  bottom: 10%;
+  right: 20%;
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.shape-5 {
+  width: 250px;
+  height: 250px;
+  bottom: -80px;
+  right: 15%;
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.register-card {
+  background: rgba(255, 255, 255, 0.116);
+  backdrop-filter: blur(20px);
+  border-radius: 20px;
+  padding: 40px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  position: relative;
+  z-index: 10;
+}
+
+.register-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.logo {
+  margin-bottom: 15px;
+}
+
+.logo-icon {
+  display: inline-block;
+  position: relative;
+  width: 40px;
+  height: 40px;
+}
+
+.check-mark {
+  position: absolute;
+  background: #4A90E2;
+  border-radius: 2px;
+}
+
+.check-1 {
+  width: 20px;
+  height: 4px;
+  top: 18px;
+  left: 5px;
+  transform: rotate(-45deg);
+}
+
+.check-2 {
+  width: 35px;
+  height: 4px;
+  top: 15px;
+  left: 2px;
+  transform: rotate(45deg);
+}
+
+.register-header h2 {
+  color: #e6dede;
+  font-size: 24px;
+  font-weight: 300;
+  margin: 10px 0 5px 0;
+}
+
+.subtitle {
+  color: #666;
+  font-size: 14px;
+  margin: 0;
+  font-weight: 300;
+}
+
+.register-form {
+  width: 100%;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+.form-input {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #E0E0E0;
+  border-radius: 8px;
+  font-size: 14px;
+  background: rgba(255, 255, 255, 0.9);
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: #4A90E2;
+  box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.1);
+}
+
+.form-input::placeholder {
+  color: #999;
+}
+
+.sign-up-btn {
+  width: 100%;
+  background: linear-gradient(135deg, #87a8b8, #203346);
+  color: white;
+  border: none;
+  padding: 15px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-bottom: 20px;
+}
+
+.sign-up-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(74, 144, 226, 0.3);
+}
+
+.form-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  font-size: 12px;
+}
+
+.remember-me {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  color: #666;
+}
+
+.remember-me input[type="checkbox"] {
+  display: none;
+}
+
+.checkmark {
+  width: 16px;
+  height: 16px;
+  border: 2px solid #ddd;
+  border-radius: 3px;
+  margin-right: 8px;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.remember-me input[type="checkbox"]:checked + .checkmark {
+  background: #4A90E2;
+  border-color: #4A90E2;
+}
+
+.remember-me input[type="checkbox"]:checked + .checkmark::after {
+  content: '✓';
+  position: absolute;
+  color: white;
+  font-size: 10px;
+  top: -2px;
+  left: 2px;
+}
+
+.login-link {
+  text-align: center;
+  margin-top: 20px;
+  padding-top: 15px;
+  border-top: 1px solid #E0E0E0;
+}
+
+.login-text {
+  font-size: 14px;
+  color: #383636;
+}
+
+.login-link-text {
+  color: #bfd9e6;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.login-link-text:hover {
+  color: #f3f5f7;
+  text-decoration: underline;
+}
+
+.location-input-group {
+  position: relative;
+}
+
+.location-btn {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  color: #007bff;
+  padding: 5px;
+  z-index: 1;
+}
+
+.location-btn:hover {
+  color: #0056b3;
+}
+
+.location-btn:disabled {
+  cursor: not-allowed;
+  color: #6c757d;
+}
+
+/* Ensure the input has enough padding for the button */
+.location-input-group .form-input {
+  padding-right: 40px;
+}
+
+@media (max-width: 480px) {
+  .register-card {
+    margin: 20px;
+    padding: 30px 25px;
+  }
+
+
+
+  /* Add more breakpoints */
+@media (max-width: 768px) {
+  .register-card {
+    margin: 15px;
+    padding: 25px 20px;
+  }
+  
+  .bg-shape {
+    display: none; /* Hide decorative elements on smaller screens */
+  }
+}
+
+@media (max-width: 320px) {
+  .register-card {
+    margin: 10px;
+    padding: 20px 15px;
+  }
+  
+  .form-input {
+    padding: 12px;
+    font-size: 16px; /* Prevents zoom on iOS */
+  }
+}
+
+}
